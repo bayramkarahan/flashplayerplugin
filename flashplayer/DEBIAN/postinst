@@ -1,0 +1,22 @@
+#!/bin/sh
+update-mime-database /usr/share/mime/ 
+update-desktop-database /usr/share/applications/
+
+for item in $(ls /home)
+do
+#echo $item
+sed -i '/application\/vnd.adobe.flash.movie/d' /home/$item/.config/mimeapps.list
+sed -i '/application\/x-shockwave-flash/d' /home/$item/.config/mimeapps.list
+sed -i '/application\/x-flash-video/d' /home/$item/.config/mimeapps.list	
+done
+
+for item in $(ls /home)
+do
+#echo $item
+sed -i '/application\/vnd.adobe.flash.movie/d' /home/$item/.local/applications/mimeapps.list
+sed -i '/application\/x-shockwave-flash/d' /home/$item/.local/applications/mimeapps.list
+sed -i '/application\/x-flash-video/d' /home/$item/.local/applications/mimeapps.list
+
+done
+
+exit 0

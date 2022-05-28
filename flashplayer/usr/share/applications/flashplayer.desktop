@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=flashplayer
+Comment[en_GB]=flash player
+Exec=/usr/bin/flashplayer %f
+Type=Application
+Categories=GNOME;GTK;Core;Documentation;Utility;
+Icon=/usr/share/local/bay-flashplayer/flash.svg
+Keywords=flash;player;swf;
+MimeType=application/vnd.adobe.flash.movie;application/x-shockwave-flash;
+Name[tr_TR.UTF-8]=flashplayer

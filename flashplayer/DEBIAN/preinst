@@ -1,0 +1,19 @@
+#!/bin/sh
+
+sed -i '/application\/x-shockwave-flash/d' /usr/share/applications/mimeinfo.cache
+sed -i '/application\/vnd.adobe.flash.movie/d' /usr/share/applications/mimeinfo.cache
+sed -i '/application\/x-flash-video/d' /usr/share/applications/mimeinfo.cache
+
+for item in $(ls /usr/share/applications/)
+do
+	if [ $item != 'mimeinfo.cache' ] 
+	then
+		#echo $item
+		sed -i 's/application\/vnd.adobe.flash.movie;//g' /usr/share/applications/$item
+		sed -i 's/application\/x-shockwave-flash;//g' /usr/share/applications/$item
+		sed -i 's/application\/x-flash-video;//g' /usr/share/applications/$item
+	fi
+done
+
+
+exit 0
