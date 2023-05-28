@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=flashplayer by
+Exec=/usr/bin/abc %f
+Type=Application
+Categories=GNOME;GTK;Core;Documentation;Utility;
+Icon=abc
+Keywords=flash;player;swf;
+MimeType=application/vnd.adobe.flash.movie;application/x-shockwave-flash;
+Name[tr_TR.UTF-8]=FlashPlayer Oynatıcı
+Name[tr_TR]=xyz.desktop

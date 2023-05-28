@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#xdg-mime uninstall --mode system ./abc.xml
+xdg-mime install --novendor --mode system ./abc.xml
+cp ./abc /usr/bin/abc
+cp ./abc.desktop /usr/share/applications/abc.desktop
+cp ./abc.svg /usr/share/icons/abc.svg
+
+xdg-mime default abc.desktop application/x-shockwave-flash
+update-mime-database /usr/share/mime/ 
+update-desktop-database /usr/share/applications/

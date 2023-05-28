@@ -1,0 +1,4 @@
+#!/bin/sh
+xdg-mime default /usr/share/applications/xyz.desktop application/vnd.adobe.flash.movie
+update-mime-database /usr/share/mime/ 
+update-desktop-database /usr/share/applications/

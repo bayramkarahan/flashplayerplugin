@@ -1,0 +1,11 @@
+Package: xyz
+Version: 1
+Architecture: all
+Depends: 
+Pre-Depends:
+Recommends: 
+Maintainer: Bayram Karahan [bayramk@gmail.com]
+Conflicts: 
+Replaces: 
+Provides: xyz
+Description: xyz eklenti
